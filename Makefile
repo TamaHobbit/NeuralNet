@@ -121,4 +121,7 @@ bigbatch:#32 instances
 	make batch
 	make batch
 	make batch
-  
+
+plot.png: plot.plt res.txt
+	gnuplot plot.plt
+	
