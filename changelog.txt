@@ -1,0 +1,42 @@
+v1.0
++dataset from file
++file parameter
+-x,y
++test with dataset
+-hardcoded xor set
+-delta's calculation when testing
+
+v1.1
++input changed to doubles
+-couts of parameters
++allowed maxepochs and convergence as optional parameters, added optional testset
+-forward iteration before training starts
+
+v1.2
++calculate average total delta over output nodes
++put everything in class neuralnet
++changed non-negative ints to size_t's
+
+v1.3
+-debugging couts
++measure training time
++saving/loading, using menu
++random init in seperate function
+
+v1.4
++verbose option for training
++verbose option for whole program
++get inputs and outputs from datasets
++training using convergence, not just maxepochs (expanded the while condition at the top of neuralnet::train)
++noinput option
++removed verbose option for saving/loading (it makes more sense to do this in main)
+
+v1.5
++batch mode
++verbose option for training
++changed how main couts, so that nonverbose just returns three numbers under each other
++output standardised for use in GNUplot
+
+v1.6
++Fixed bug: c_rate not initialised, so it wouldn't work outside batch mode
++Added batch and bigbatch options in makefile, to gather some data
